@@ -21,6 +21,11 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+// disable plain jar
+jar {
+    enabled = false
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
